@@ -5,10 +5,10 @@
 [![GitHub issues](https://img.shields.io/github/issues/EvsenevDev/VIPERModuleTemplate.svg)](https://github.com/EvsenevDev/VIPERModuleTemplate/issues)
 [![GitHub license](https://img.shields.io/github/license/EvsenevDev/VIPERModuleTemplate.svg)](https://github.com/EvsenevDev/VIPERModuleTemplate/blob/master/LICENSE)
 
-Once you've decided to use a VIPER architecture in your app, you shound know about the routine. For each screen/module you should create at least 6 files. Imagine that you need to create 10 modules. To avoid this boring work you can use this template which help you to generate a compete module. It's very useful for me and I hope it can be useful for you too. 
+Once you've decided to use a VIPER architecture in your app, you should know about the routine. For each screen/module you should create at least 6 files. Imagine that you need to create 10 modules. To avoid this boring work you can use this template which helps you to generate a compete module. It's very useful for me, and I hope it can be useful for you too. 
 
 ## Generated files
-The template generates all files that you need to create a new VIPER module. All generated code is Swift 4 compatible.
+The template generates all the files that you need to create a new VIPER module. All generated code is Swift 4 compatible.
 
 | File Name | Acts As | Description |
 | :---         |     :---      |          :--- |
@@ -30,12 +30,12 @@ sudo swift install.swift
 
 You should see this output message:
 
-`✅ VIPER Template succesfully installed.`
+`✅ VIPER Template successfully installed.`
 
 If it's ok, you could see your template in the Xcode.
 
 ### Manual installation
-Go to Application folder, browse to the Xcode application icon. Right-click on it and choose 'Show Package Contents'. Then, browse to:
+Go to the Application folder, browse to the Xcode application icon. Right-click on it and choose 'Show Package Contents'. Then, browse to:
 `Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates/File Templates/Architecture` and add "VIPER Module.xctemplate" file. Now you can see your template in the Xcode.
 
 
@@ -48,32 +48,32 @@ Go to Application folder, browse to the Xcode application icon. Right-click on i
 
 
 ## VIPER Checklist
-To get started easier, we’ve prepared a check list to make sure that everything follows the VIPER’s design principle. We hope, this list will be useful for you as it is for us.
+To get started easier, we’ve prepared a checklist to make sure that everything follows the VIPER’s design principle. We hope, this list will be useful for you as it is for us.
 
 * [ ] Views and view controllers receive user interactions and pass them to presenters for decision making.
-* [ ] Presenters contain the view logics and prepare content for display and reacting to user inputs.
+* [ ] Presenters contain the view's logic and prepare content for display and reacting to user inputs.
 * [ ] Presenters should not know about the existence of all UIViewControllers.
-* [ ] Interactors contain business logics and they should be independent of UI.
+* [ ] Interactors contain business' logic and they should be independent of UI.
 
 
 ## What is VIPER?
 VIPER is not a framework, but an approach to iOS application architecture, which stands for:
 
 #### VIEW
->View controller. It is responsible to receive user interactions and pass them to presenters for decision making. To keep the view simple, it shouldn’t contain any view logics. This is where to define how the view looks like, and nothing beyond this.
+>View controller. It is responsible to receive user interactions and pass them to presenters for decision making. To keep the view simple, it shouldn’t contain any view's logic. This is where to define how the view looks like, and nothing beyond this.
 
 #### PRESENTER
->The presenter defines the view logics, e.g. when to show a warning message or highlight a button. It is responsible to prepare content for the view to display. Whenever data is required, the presenter requests data from interactors (but not directly from the model).
+>The presenter defines the view's logic, e.g. when to show a warning message or highlight a button. It is responsible to prepare content for the view to display. Whenever data is required, the presenter requests data from interactors (but not directly from the model).
 
 #### INTERACTOR
->The interactor mainly contains business logic, e.g. logging in the user /  processing a purchase / sending a friend request. It should be independent of the UI. It only handles requests from the presenter and prepare corresponding data regardless of how the view looks like.
+>The interactor mainly contains business logic, e.g. logging in the user / processing a purchase / sending a friend request. It should be independent of the UI. It only handles requests from the presenter and prepares corresponding data regardless of how the view looks like.
 
 #### ROUTER
 >Router defines the routes from one screen to another. In VIPER, the responsibility for Routing is shared between the presenter and the wireframe.
 When the presenter receives user interactions and decided to navigate to another screen, it will use the wireframe to perform the desired navigation (to which screen and how to navigate). The wireframe can also contain transition animations.
 
 #### ASSEMBLY
->Assembly builds the modules with inpurt params and links all layers. Should connect Presenter with View, Router and Interactor, Interactor with Presenter, View with Presener. Should setup input data of module and can return module Input if needed.
+>Assembly builds the modules with input params and links all layers. Should connect Presenter with View, Router and Interactor, Interactor with Presenter, View with Presenter. Should setup input data of module and can return module Input if needed.
 
 ## Why VIPER?
 After using VIPER, I've found it to be very beneficial in many ways. Let’s get back to the list of things we set out to accomplish when architecting our app to see if VIPER addresses them.
