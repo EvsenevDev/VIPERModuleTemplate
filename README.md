@@ -4,6 +4,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/EvsenevDev/VIPERModuleTemplate.svg)](https://github.com/EvsenevDev/VIPERModuleTemplate/stargazers)
 [![GitHub issues](https://img.shields.io/github/issues/EvsenevDev/VIPERModuleTemplate.svg)](https://github.com/EvsenevDev/VIPERModuleTemplate/issues)
 [![GitHub license](https://img.shields.io/github/license/EvsenevDev/VIPERModuleTemplate.svg)](https://github.com/EvsenevDev/VIPERModuleTemplate/blob/master/LICENSE)
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/EvsenevDev/VIPERModuleTemplate)
 
 Once you've decided to use a VIPER architecture in your app, you should know about the routine. For each screen/module you should create at least 6 files. Imagine that you need to create 10 modules. To avoid this boring work you can use this template which helps you to generate a compete module. It's very useful for me, and I hope it can be useful for you too. 
 
